@@ -3,7 +3,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ErrorBoundary } from '@/components/error-boundary';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
-import { ArrowRight, Check, ChevronLeft, ChevronRight, Clock3, ExternalLink, Flame, Image as ImageIcon, Instagram, MapPin, Minus, Navigation, Phone, Plus, Search, ShoppingBag, Star, Utensils, X } from 'lucide-react';
+import { ArrowRight, Check, ChevronLeft, ChevronRight, Clock3, ExternalLink, Flame, Image as ImageIcon, Instagram, MapPin, Minus, Navigation, Phone, Play, Plus, Search, ShoppingBag, Star, Utensils, Video, X } from 'lucide-react';
 import { Route, Switch, Router as WouterRouter, useLocation } from 'wouter';
 
 type Category = 'All' | 'Shawarma' | 'Biryani' | 'Mandi' | 'Drinks' | 'Veg';
@@ -25,6 +25,7 @@ const WHATSAPP_NUMBER = '919963621739';
 const PHONE_DISPLAY = '+91 99636 21739';
 const ADDRESS = '127/A, Road No. 6, Opposite JNTU, Addagutta, Samatha Nagar, Kukatpally, Hyderabad, Telangana 500085';
 const HOURS_LABEL = 'Open today · closes at 12:30 am';
+const GOOGLE_MAPS_URL = 'https://maps.app.goo.gl/2iiHmZdz7yzBJcfo9';
 const PROMO_HEADLINE = 'Your next craving is waiting.';
 const PROMO_COPY = 'Fresh food. Big flavours. Budget-friendly prices.';
 
@@ -252,6 +253,29 @@ function Home() {
           <div className="flex items-end justify-between"><div><p className="font-mono-ui text-[10px] uppercase tracking-[.25em] text-primary">A look inside / 03</p><h2 className="mt-3 font-display text-5xl tracking-[-.045em] text-foreground md:text-6xl">Follow the smoke.</h2></div><a href="https://www.instagram.com/" target="_blank" rel="noreferrer" className="hidden items-center gap-2 text-sm text-muted-foreground transition hover:text-primary sm:flex" data-testid="link-instagram"><Instagram size={16} /> @sizzlingshawarmas <ExternalLink size={13} /></a></div>
           <div className="mt-9 grid h-[420px] gap-3 sm:grid-cols-3 md:h-[500px]">{gallery.map((photo, index) => <button key={photo.image} onClick={() => setLightboxIndex(index)} className={`group relative overflow-hidden rounded-2xl border border-border text-left ${index === 1 ? 'sm:translate-y-8' : ''}`} data-testid={`button-gallery-${index}`}><img src={photo.image} alt={photo.label} className="h-full w-full object-cover transition duration-700 group-hover:scale-105" /><span className="absolute inset-x-4 bottom-4 flex items-center justify-between font-mono-ui text-[10px] uppercase tracking-widest text-foreground"><span>{photo.label}</span><ImageIcon size={15} /></span><span className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent opacity-70" /></button>)}</div>
         </section>
+
+         <section className="border-y border-border bg-card/30">
+           <div className="mx-auto max-w-[1440px] px-5 py-20 md:py-24 lg:px-10">
+             <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
+               <div><p className="font-mono-ui text-[10px] uppercase tracking-[.25em] text-primary">Owner media / Google Maps</p><h2 className="mt-3 font-display text-5xl tracking-[-.045em] text-foreground md:text-6xl">See the real place.</h2><p className="mt-4 max-w-xl text-sm leading-6 text-muted-foreground">This photo is sourced from the restaurant&apos;s Google Maps listing. Open the listing to see the complete set of owner and customer photos, plus any videos.</p></div>
+               <a href={GOOGLE_MAPS_URL} target="_blank" rel="noreferrer" className="inline-flex shrink-0 items-center gap-2 text-sm font-semibold text-primary hover:underline" data-testid="link-google-media"><ExternalLink size={15} /> Open the Google Maps listing</a>
+             </div>
+             <div className="mt-10 grid gap-4 md:grid-cols-[1.15fr_.85fr]">
+               <a href={GOOGLE_MAPS_URL} target="_blank" rel="noreferrer" className="group relative min-h-[320px] overflow-hidden rounded-[1.5rem] border border-border bg-background" data-testid="link-google-photo">
+                 <img src="/google-maps-photo-1.jpg" alt="Chocolate shake and dessert photographed at Sizzling Shawarmas & Biryanis" className="h-full min-h-[320px] w-full object-cover transition duration-700 group-hover:scale-105" />
+                 <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 bg-gradient-to-t from-background/90 via-background/40 to-transparent p-5 pt-16"><span><span className="block font-mono-ui text-[10px] uppercase tracking-widest text-primary">Verified listing photo</span><span className="mt-1 block font-display text-2xl text-foreground">From Sizzling on Google Maps</span></span><span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground"><ExternalLink size={16} /></span></div>
+               </a>
+               <div className="flex flex-col justify-between rounded-[1.5rem] border border-border bg-background p-6 md:p-8">
+                 <div>
+                   <div className="flex h-11 w-11 items-center justify-center rounded-full bg-primary/15 text-primary"><Video size={21} /></div>
+                   <h3 className="mt-7 font-display text-4xl leading-none text-foreground">Photos, videos, straight from the listing.</h3>
+                   <p className="mt-4 text-sm leading-6 text-muted-foreground">Google keeps the full media viewer interactive, so the latest photos and videos stay connected to the restaurant&apos;s live listing.</p>
+                 </div>
+                 <a href={GOOGLE_MAPS_URL} target="_blank" rel="noreferrer" className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-primary px-5 py-3.5 text-sm font-bold text-primary-foreground transition hover:translate-y-[-2px]" data-testid="button-google-videos"><Play size={15} fill="currentColor" /> View photos &amp; videos on Maps</a>
+               </div>
+             </div>
+           </div>
+         </section>
 
         <section id="reviews" className="scroll-mt-20 border-y border-border bg-card/30">
           <div className="mx-auto grid max-w-[1440px] gap-10 px-5 py-20 md:grid-cols-[.8fr_1.2fr] md:items-center md:py-24 lg:px-10">
