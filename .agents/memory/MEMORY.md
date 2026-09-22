@@ -1,0 +1,1 @@
+- [Restaurant content integrity](restaurant-content-integrity.md) — never guess menu prices or customer review copy when official content is unavailable.

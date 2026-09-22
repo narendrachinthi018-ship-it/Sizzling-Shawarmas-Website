@@ -1,0 +1,433 @@
+Create a highly interactive, premium restaurant website for:
+
+SIZZLING SHAWARMAS & BIRYANIS
+సిజ్జ్లింగ్ శావర్మాస్ & బిర్యనిస్
+
+Location:
+127/A, Road No. 6, Opposite JNTU,
+Addagutta, Samatha Nagar, Kukatpally,
+Hyderabad, Telangana 500085
+
+Phone:
++91 99636 21739
+
+Google Rating:
+4.7/5 from 15 reviews
+
+Price:
+₹1–₹200 per person
+
+The website must feel like a modern food-ordering experience, not a simple informational website.
+
+==================================================
+DESIGN
+==================================================
+
+Use a premium dark food-themed design with:
+- Black/charcoal background
+- Warm orange/red/golden accent colors
+- Large high-quality food photography
+- Glassmorphism-style cards where appropriate
+- Rounded UI elements
+- Modern typography
+- Smooth micro-interactions
+- Subtle animations
+- Excellent spacing
+- Premium restaurant-brand appearance
+
+Make the website visually impressive on both desktop and mobile.
+
+==================================================
+INTERACTIVE HERO SECTION
+==================================================
+
+Create a cinematic hero section with a large shawarma/biryani image.
+
+Headline:
+
+"CRAVING SOMETHING
+SIZZLING?"
+
+Subheading:
+
+"Fresh Shawarmas. Flavorful Biryanis.
+Made to satisfy every craving."
+
+Buttons:
+
+[Explore Menu]
+[Order Now]
+
+Add animated food/category chips:
+🌯 Shawarma
+🍗 Biryani
+🔥 Mandi Fusion
+🥤 Drinks
+
+When users click a category chip, smoothly scroll to the corresponding menu section.
+
+Add an animated rating badge:
+
+★★★★★
+4.7 / 5
+15 Google Reviews
+
+==================================================
+STICKY NAVIGATION
+==================================================
+
+Create a transparent navigation bar that becomes a solid dark navbar while scrolling.
+
+Navigation:
+
+Home
+Menu
+About
+Reviews
+Location
+
+Right side:
+
+[🛒 Order Now]
+
+On mobile, create a hamburger menu.
+
+==================================================
+INTERACTIVE MENU
+==================================================
+
+Create a beautiful interactive menu.
+
+Categories:
+
+ALL
+SHAWARMA
+BIRYANI
+MANDI
+DRINKS
+VEG
+
+Create food cards containing:
+
+- Large food image
+- Dish name
+- Short description
+- Price
+- Vegetarian/non-vegetarian indicator
+- Add button
+
+Example:
+
+Chicken Shawarma
+"Juicy chicken wrapped with fresh vegetables and flavorful sauces."
+
+Chicken Biryani
+"Aromatic basmati rice cooked with flavorful spices."
+
+IMPORTANT:
+Do not invent actual restaurant prices. Use editable placeholder prices until the client provides the official menu.
+
+==================================================
+FOOD CARD INTERACTION
+==================================================
+
+When the user clicks a food item:
+
+Open a beautiful modal containing:
+
+Large food image
+Dish name
+Description
+Price
+Quantity selector [- 1 +]
+Special instructions
+[Add to Cart]
+
+Animate the modal smoothly.
+
+==================================================
+SHOPPING CART
+==================================================
+
+Add a functional shopping cart.
+
+Cart should show:
+
+Item
+Quantity
+Price
+Subtotal
+Delivery charge
+Total
+
+Buttons:
+
+[Continue Shopping]
+[Order Now]
+
+The cart icon in the navbar should display the number of items.
+
+Use local browser state for the cart.
+
+==================================================
+ORDER EXPERIENCE
+==================================================
+
+When the user clicks "Order Now":
+
+Show an order form:
+
+Name
+Phone Number
+Delivery / Pickup
+Address
+Special Instructions
+
+Then show:
+
+Order Summary
+Total Amount
+
+Primary button:
+
+"Place Order on WhatsApp"
+
+Generate a WhatsApp message containing the selected food items, quantities, customer name and order total.
+
+Use the restaurant's phone number:
++91 99636 21739
+
+Do not claim that online payment is available unless the client provides a payment system.
+
+==================================================
+SPECIAL OFFER SECTION
+==================================================
+
+Create an eye-catching animated promotional section.
+
+Example:
+
+"YOUR NEXT CRAVING IS WAITING 🔥"
+
+"Fresh food. Big flavors. Budget-friendly prices."
+
+Add:
+
+[Explore Today's Menu]
+
+Make the content editable so the restaurant owner can later add actual offers.
+
+==================================================
+WHY CHOOSE US
+==================================================
+
+Create four interactive feature cards:
+
+🔥 Freshly Prepared
+🌯 Flavorful Shawarmas
+🍗 Delicious Biryanis
+💰 Budget Friendly
+
+Cards should animate slightly when hovered/tapped.
+
+==================================================
+FOOD GALLERY
+==================================================
+
+Create a modern masonry-style food gallery.
+
+Images:
+- Shawarma
+- Biryani
+- Mandi
+- Restaurant atmosphere
+- Food preparation
+
+Clicking an image should open a lightbox.
+
+Users can:
+- View image
+- Close image
+- Navigate between images
+
+==================================================
+CUSTOMER REVIEWS
+==================================================
+
+Create an interactive review carousel.
+
+Show:
+
+4.7 ★
+15 Google Reviews
+
+Use ONLY genuine customer reviews supplied by the client or verified business listing.
+
+Do not generate fake customer reviews.
+
+Include left/right navigation buttons and mobile swipe-friendly behavior.
+
+==================================================
+LOCATION
+==================================================
+
+Create a visually attractive location section.
+
+Address:
+
+127/A, Road No. 6,
+Opposite JNTU,
+Addagutta, Samatha Nagar,
+Kukatpally,
+Hyderabad, Telangana 500085
+
+Buttons:
+
+📍 Get Directions
+📞 Call Restaurant
+💬 WhatsApp
+
+Include a Google Maps link provided by the restaurant.
+
+==================================================
+OPENING HOURS
+==================================================
+
+Create an interactive opening-hours card.
+
+Show:
+
+"Open Today"
+
+"Closes at 12:30 AM"
+
+Allow the restaurant owner to edit the opening hours.
+
+==================================================
+MOBILE BOTTOM BAR
+==================================================
+
+On mobile, create a sticky bottom navigation:
+
+🏠 Home
+🍽 Menu
+🛒 Cart
+📍 Location
+📞 Call
+
+Make each button functional.
+
+==================================================
+ANIMATIONS
+==================================================
+
+Use tasteful animations:
+
+- Hero text fade/slide
+- Food images reveal on scroll
+- Menu cards stagger animation
+- Button hover animation
+- Cart item animation
+- Number counter animation
+- Smooth scrolling
+- Modal opening animation
+- Gallery lightbox animation
+- Review carousel animation
+
+Do NOT overuse animations.
+
+Respect prefers-reduced-motion accessibility settings.
+
+==================================================
+MICRO INTERACTIONS
+==================================================
+
+Add small details that make the website feel premium:
+
+- Button press feedback
+- Cart badge animation
+- "Added to cart" notification
+- Smooth category filtering
+- Image zoom on hover
+- Animated navigation indicator
+- Loading skeletons where appropriate
+- Toast notification after adding an item
+
+==================================================
+SEO
+==================================================
+
+Optimize for local search.
+
+Primary keywords:
+
+Sizzling Shawarmas & Biryanis
+Shawarma in Kukatpally
+Biryani near JNTU Hyderabad
+Shawarma near JNTU
+Restaurants in Kukatpally
+Biryani in Kukatpally
+Shawarma near JNTU Hyderabad
+
+Create:
+
+SEO title
+Meta description
+Open Graph metadata
+Restaurant structured data
+Proper H1/H2/H3 structure
+Image alt text
+Local SEO content
+
+Do not make unsupported claims such as:
+"Best restaurant in Hyderabad"
+"No.1 shawarma"
+"Best biryani in Hyderabad"
+
+unless the restaurant owner provides evidence supporting those claims.
+
+==================================================
+PERFORMANCE
+==================================================
+
+The website must:
+
+- Load quickly
+- Be mobile-first
+- Use responsive images
+- Lazy-load gallery images
+- Minimize unnecessary JavaScript
+- Have clean reusable components
+- Be accessible
+- Have keyboard navigation
+- Have visible focus states
+- Work at 320px mobile width without horizontal scrolling
+
+==================================================
+FINAL EXPERIENCE
+==================================================
+
+The final website should feel similar to a premium modern food-delivery brand.
+
+The visitor should be able to:
+
+1. Discover the restaurant
+2. Explore food categories
+3. Filter the menu
+4. View food details
+5. Add food to cart
+6. Change quantities
+7. See the total
+8. Enter delivery details
+9. Send the order through WhatsApp
+10. Call the restaurant
+11. Get directions
+12. Read reviews
+13. Browse food photos
+
+Make the entire experience smooth, interactive, visually rich and professional.
+
+IMPORTANT:
+Use real business information provided above.
+Do not invent menu prices, reviews, awards, offers, ingredients or business claims.
+Keep all menu data editable so the restaurant owner can update it later.
